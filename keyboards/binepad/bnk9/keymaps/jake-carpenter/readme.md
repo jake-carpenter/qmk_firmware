@@ -1,5 +1,11 @@
 # Binepad BNK9 setup
 
+## Usage
+
+- Colors have been simplified for a solid color per layer
+- Macro layer triggered LT by the bottom right key to avoid accidental triggering
+- QK_BOOT on Macro layer with top left key
+
 ## Compiling
 
 ### Install dependencies
@@ -14,6 +20,12 @@ If this fails, try to reinstall/setup QMK:
 brew uninstall qmk/qmk/qmk
 brew install qmk/qmk/qmk
 qmk setup jake-carpenter/qmk_firmware
+```
+
+Verify changes can be compiled:
+
+```bash
+qmk compile -kb binepad/bnk9 --keymap jake-carpenter
 ```
 
 ## Flashing
